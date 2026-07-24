@@ -463,27 +463,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQs();
   initDragAndDrop();
   initBookingTriggers();
-  initDeliveryToggle();
+  
 });
 
-function initDeliveryToggle() {
-  const optionSelect = document.getElementById('delivery-option');
-  const addressGroup = document.getElementById('delivery-address-group');
-  const addressInput = document.getElementById('delivery-address');
-  
-  if (optionSelect && addressGroup && addressInput) {
-    optionSelect.addEventListener('change', () => {
-      if (optionSelect.value === 'delivery') {
-        addressGroup.style.display = 'block';
-        addressInput.required = true;
-      } else {
-        addressGroup.style.display = 'none';
-        addressInput.required = false;
-        addressInput.value = '';
-      }
-    });
-  }
-}
+
+
 
 // --- Sticky Navigation header shadow ---
 function initHeaderScroll() {
@@ -801,20 +785,14 @@ window.submitBooking = function(channel) {
   const name = document.getElementById('client-name').value.trim();
   const email = document.getElementById('client-email').value.trim();
   const phone = document.getElementById('client-phone').value.trim();
-  const deliverySelect = document.getElementById('delivery-option');
-  const delivery = deliverySelect.options[deliverySelect.selectedIndex].text;
-  const deliveryVal = deliverySelect.value;
-  const deliveryAddress = deliveryVal === 'delivery' ? document.getElementById('delivery-address').value.trim() : '';
-  
+  const delivery = "Pickup";
+const deliveryAddress = "";
   if (!name || !email || !phone) {
     alert("Please complete all contact detail fields before submitting.");
     return;
   }
   
-  if (deliveryVal === 'delivery' && !deliveryAddress) {
-    alert("Please provide your delivery/pickup destination address.");
-    return;
-  }
+ 
   
   const productSpec = productDatabase[selectedProduct];
   const formState = getSpecsFormState();
@@ -865,10 +843,7 @@ ${deliveryAddress ? `*Delivery/Pickup Address:* ${deliveryAddress}\n` : ''}
     formData.append('name', name);
     formData.append('email', email);
     formData.append('phone', phone);
-    formData.append('delivery', delivery);
-    if (deliveryAddress) {
-      formData.append('delivery_address', deliveryAddress);
-    }
+   
     formData.append('booking_summary', summaryPayload);
     
     fetch('https://api.web3forms.com/submit', {
