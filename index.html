@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL Graphics & Printing | Premium Copying & Printing Center Toronto</title>
+  <meta name="description" content="SL Graphics & Printing Inc. (printmycard.ca) offers premium printing services in Toronto. Book business cards, flyers, signage, color copies, and custom labels online.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖨️</text></svg>">
+</head>
+<body>
+
+  <!-- --- Header / Navbar --- -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <img src="https://printmycard.ca/wp-content/uploads/2023/02/SLGraphicsLogo-1.png" alt="SL Graphics & Printing Inc. Logo">
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#process" class="nav-link">How It Works</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="btn btn-primary" onclick="openBookingDrawer()">Book Online</button>
+        
+        <!-- Mobile menu toggle -->
+        <div id="burger-menu" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-nav" class="mobile-nav">
+    <a href="#products" class="nav-link" onclick="toggleMobileNav()">Products</a>
+    <a href="#process" class="nav-link" onclick="toggleMobileNav()">How It Works</a>
+    <a href="#testimonials" class="nav-link" onclick="toggleMobileNav()">Reviews</a>
+    <a href="#faq" class="nav-link" onclick="toggleMobileNav()">FAQ</a>
+    <a href="#contact" class="nav-link" onclick="toggleMobileNav()">Contact</a>
+    <button class="btn btn-primary" onclick="toggleMobileNav(); openBookingDrawer()">Book Online</button>
+  </div>
+
+  <!-- --- Hero Section --- -->
+  <section id="hero" class="hero-section">
+    <!-- Slideshow Background Carousel -->
+    <div class="hero-slideshow">
+      <div class="hero-slide slide-1"></div>
+      <div class="hero-slide slide-2"></div>
+      <div class="hero-slide slide-3"></div>
+      <div class="hero-slide slide-4"></div>
+    </div>
+    
+    <div class="container hero-grid" style="position: relative; z-index: 2;">
+      <div class="hero-content">
+        <h1>Transform Your Project Into <span class="gradient-text-cmyk">A Finished Piece</span></h1>
+        <p>SL Graphics & Printing Inc. is a professional Copying and Printing Center in Toronto. We print and design everything from signs and banners to brochures, books, and custom stickers with fast turnarounds.</p>
+        
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="openBookingDrawer()">Instant Booking</button>
+          <a href="#products" class="btn btn-secondary">Explore Products</a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 class="text-cyan">20+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="text-magenta">100%</h3>
+            <p>Satisfaction</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="text-yellow">Fast</h3>
+            <p>Toronto Delivery</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-showcase">
+        <!-- 2x2 Showcase Collage of Real Client Work -->
+        <div class="showcase-card">
+          <img src="/assets/real-work-1.png" alt="Custom Print Poster H&M Grand Reopening">
+        </div>
+        <div class="showcase-card">
+          <img src="/assets/real-work-2.png" alt="Framed Wall Art Boxing Gallery">
+        </div>
+        <div class="showcase-card">
+          <img src="/assets/real-work-3.png" alt="Marketing Cards Cardinal Construction">
+        </div>
+        <div class="showcase-card">
+          <img src="/assets/real-work-4.png" alt="Premium Event Pamphlets Asheq Onelight Theatre">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Continuous Moving Ticker Stripline -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item">⚡ Premium Business Cards</span>
+      <span class="ticker-item">⚡ Same-Day Digital Rush Cards</span>
+      <span class="ticker-item">⚡ High-Def Color Copies</span>
+      <span class="ticker-item">⚡ Custom stickers & Labels</span>
+      <span class="ticker-item">⚡ Retractable Banner Stands</span>
+      <span class="ticker-item">⚡ Event Seating Charts</span>
+      <span class="ticker-item">⚡ Fine Art Canvas Wraps</span>
+      <span class="ticker-item">⚡ Life-Size Cardboard Cutouts</span>
+      <span class="ticker-item">⚡ Photobooth Backdrops</span>
+      <span class="ticker-item">⚡ Rigid Signs & A-Frames</span>
+      <span class="ticker-item">⚡ Architectural Blueprints</span>
+      <span class="ticker-item">⚡ In-Store scanning & Fax</span>
+      <!-- Repeated for infinite scroll seamless effect -->
+      <span class="ticker-item">⚡ Premium Business Cards</span>
+      <span class="ticker-item">⚡ Same-Day Digital Rush Cards</span>
+      <span class="ticker-item">⚡ High-Def Color Copies</span>
+      <span class="ticker-item">⚡ Custom stickers & Labels</span>
+      <span class="ticker-item">⚡ Retractable Banner Stands</span>
+      <span class="ticker-item">⚡ Event Seating Charts</span>
+      <span class="ticker-item">⚡ Fine Art Canvas Wraps</span>
+      <span class="ticker-item">⚡ Life-Size Cardboard Cutouts</span>
+      <span class="ticker-item">⚡ Photobooth Backdrops</span>
+      <span class="ticker-item">⚡ Rigid Signs & A-Frames</span>
+      <span class="ticker-item">⚡ Architectural Blueprints</span>
+      <span class="ticker-item">⚡ In-Store scanning & Fax</span>
+    </div>
+  </div>
+
+  <!-- --- Products Showcase (All Categories & 35 Products) --- -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Comprehensive <span class="gradient-text-cmyk">Print Products</span></h2>
+        <p>Online or in-store, we provide top class designs at affordable prices. Select a product to configure and book instantly.</p>
+      </div>
+
+      
+      
+
+
+      <!-- Dynamic Product Filtering Tabs -->
+      <div class="product-filters" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; flex-wrap: wrap;">
+        <button class="btn btn-secondary filter-btn active" data-filter="all" onclick="filterCatalog('all', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">All Full Catalog</button>
+        <button class="btn btn-secondary filter-btn" data-filter="cards" onclick="filterCatalog('cards', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">Business Cards</button>
+        <button class="btn btn-secondary filter-btn" data-filter="copies" onclick="filterCatalog('copies', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">Copies & Documents</button>
+        <button class="btn btn-secondary filter-btn" data-filter="signs" onclick="filterCatalog('signs', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">Signs & Banners</button>
+        <button class="btn btn-secondary filter-btn" data-filter="books" onclick="filterCatalog('books', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">Books & Binding</button>
+        <button class="btn btn-secondary filter-btn" data-filter="labels" onclick="filterCatalog('labels', this)" style="border-radius: 20px; padding: 8px 16px; font-size: 0.85rem;">Stickers & Labels</button>
+      </div>
+
+      <!-- Main Products Grid -->
+      <div class="products-grid compact-grid" id="main-catalog-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px;">
+        
+        <!-- --- BUSINESS CARDS --- -->
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="business-cards">
+          <div class="product-image">
+            <img src="/assets/business-cards.jpg" alt="Premium Offset Business Cards">
+          </div>
+          <div class="product-info">
+            <h3>Premium Business Cards</h3>
+            <p>Premium standard business cards printed on thick cardstock with options for matte or gloss coatings.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$39.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('business-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="standard-cards">
+          <div class="product-image">
+            <img src="/assets/standard-cards.jpg" alt="Standard Economical Business Cards">
+          </div>
+          <div class="product-info">
+            <h3>Standard Business Cards</h3>
+            <p>Economical standard business cards. Perfect for high-volume distributions and quick hand-outs.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$39.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('standard-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="digital-cards">
+          <div class="product-image">
+            <span class="product-tag cyan">Rush Service</span>
+            <img src="/assets/digital-cards.jpg" alt="Same-Day Digital Rush Cards">
+          </div>
+          <div class="product-info">
+            <h3>Same-Day Digital Cards</h3>
+            <p>Fast digital printing. Standard size cards printed and cut within hours for urgent meetings.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$45.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('digital-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="silk-cards">
+          <div class="product-image">
+            <img src="/assets/silk-cards.jpg" alt="Premium Silk Laminated Business Cards">
+          </div>
+          <div class="product-info">
+            <h3>Premium Silk Cards</h3>
+            <p>Sleek silk-laminated cardstock. Water-resistant, tear-resistant, with an ultra-premium smooth texture.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$65.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('silk-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="suede-cards">
+          <div class="product-image">
+            <img src="/assets/suede-cards.jpg" alt="Suede Soft Touch Business Cards">
+          </div>
+          <div class="product-info">
+            <h3>Suede Matte Cards</h3>
+            <p>Thick cards laminated with soft-touch suede film. Unique tactile luxury feel that leaves an impression.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$75.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('suede-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="raised-cards">
+          <div class="product-image">
+            <img src="/assets/raised-cards.jpg" alt="Raised Spot UV Cards">
+          </div>
+          <div class="product-info">
+            <h3>Raised Spot UV Cards</h3>
+            <p>Thick suede cards with glossy, elevated raised varnish elements to accentuate logo patterns.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$85.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('raised-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="gold-foil-cards">
+          <div class="product-image">
+            <img src="/assets/gold-foil-cards.jpg" alt="Gold Metallic Foil Cards">
+          </div>
+          <div class="product-info">
+            <h3>Gold Foil Cards</h3>
+            <p>Luxury cards highlighted with metallic gold foil stamping. Ideal for high-profile business branding.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$95.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('gold-foil-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="cards" data-product="edge-cards">
+          <div class="product-image">
+            <img src="/assets/edge-cards.jpg" alt="Colored Painted Edge Cards">
+          </div>
+          <div class="product-info">
+            <h3>Edge Painted Cards</h3>
+            <p>Ultra-thick cardstock with custom spray-painted edges in CMYK colors or metallic gold/silver shades.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$110.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('edge-cards')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- --- COPIES & DOCUMENT SERVICES --- -->
+        <div class="product-card gradient-border-cyan-magenta" data-category="copies" data-product="color-copies">
+          <div class="product-image">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.TQFu-o4Hwe6vmVLW4YZG1wHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="High Definition Color Copies">
+          </div>
+          <div class="product-info">
+            <h3>High-Def Color Copies</h3>
+            <p>Professional laser color prints. Sharp graphics and vibrant colors on premium presentation papers.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$0.39</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('color-copies')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="copies" data-product="bw-copies">
+          <div class="product-image">
+            <img src="https://d3kao0ewn8yaz4.cloudfront.net/images/product/Black_and_white_copies_V3_1_.jpg" alt="Laser Black and White Copies">
+          </div>
+          <div class="product-info">
+            <h3>Black & White Copies</h3>
+            <p>High-volume black and white document printing and copying with fast turnarounds.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$0.09</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('bw-copies')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="copies" data-product="scanning-service">
+          <div class="product-image">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Sgby5fUZz4heNtp-LZGq_QHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Document Scanning Service">
+          </div>
+          <div class="product-info">
+            <h3>Document Scanning</h3>
+            <p>Fast scanning of paper contracts, receipts, and photos to digital PDF/JPG on USB or direct to email.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$5.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('scanning-service')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="copies" data-product="wide-format">
+          <div class="product-image">
+            <img src="https://cdn.shopify.com/s/files/1/0659/8210/3799/files/large-format-printing-3-scaled.jpg?v=1733200770" alt="Architectural Blueprints Wide Format">
+          </div>
+          <div class="product-info">
+            <h3>Wide Format Prints</h3>
+            <p>High-resolution architectural blueprints, structural drawings, mapping layouts, and oversized posters.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$25.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('wide-format')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="copies" data-product="document-services">
+          <div class="product-image">
+            <span class="product-tag yellow">In-store</span>
+            <img src="https://www.postalannex.com/sites/all/themes/pa_zen/images/views/laminating-service.jpg" alt="In-Store Document Services">
+          </div>
+          <div class="product-info">
+            <h3>Document Services</h3>
+            <p>Comprehensive in-store paper folding, stapling, document collation, laminating, and cutting services.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$10.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('document-services')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- --- SIGNS & BANNERS --- -->
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="banner-stands">
+          <div class="product-image">
+            <img src="https://lasvegasbanner.com/image/cache/catalog/photo-gallery/275749059_3189288514670040_8970950421651870377_n-2048x1536.jpg" alt="Retractable Roll Up Banners">
+          </div>
+          <div class="product-info">
+            <h3>Retractable Banner Stands</h3>
+            <p>Premium roll-up banner stands with anti-curl vinyl graphics. Includes carrying case.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$119.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('banner-stands')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="seating-charts">
+          <div class="product-image">
+            <span class="product-tag magenta">Wedding Highlight</span>
+            <img src="/assets/seating-charts.png" alt="Wedding Event Guest Seating Charts">
+          </div>
+          <div class="product-info">
+            <h3>Event Seating Charts</h3>
+            <p>Elegant table arrangements printed on rigid foam board or PVC for weddings and galas.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$65.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('seating-charts')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="canvas-prints">
+          <div class="product-image">
+            <img src="/assets/canvas-prints.jpg" alt="Fine Art Canvas gallery wraps">
+          </div>
+          <div class="product-info">
+            <h3>Canvas Gallery Wraps</h3>
+            <p>Turn photos into wall art. Gallery-wrapped canvas stretched over premium wood frames.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$59.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('canvas-prints')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="standup-cutouts">
+          <div class="product-image">
+            <span class="product-tag magenta">Event Fun</span>
+            <img src="/assets/standup-cutouts.png" alt="Life-Size Cardboard Standup Cutouts">
+          </div>
+          <div class="product-info">
+            <h3>Life-Size Standup Cutouts</h3>
+            <p>Custom life-size cardboard standees. Perfect for weddings, birthdays, and store marketing.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$99.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('standup-cutouts')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="photobooth">
+          <div class="product-image">
+            <img src="https://koala.sh/api/image/v2-549wj-e1d9h.jpg?width=1216&height=832&dream" alt="Event Photobooth Step and Repeat Backdrops">
+          </div>
+          <div class="product-info">
+            <h3>Photobooth Backdrops</h3>
+            <p>Step-and-repeat backdrops and banner backgrounds for media photo ops and events.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$149.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('photobooth')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="rigid-signs">
+          <div class="product-image">
+            <img src="/assets/rigid-signs.jpg" alt="Coroplast Lawn Signs Aframe Stands">
+          </div>
+          <div class="product-info">
+            <h3>Rigid Signs & A-Frames</h3>
+            <p>Heavy-duty outdoor signage. Coroplast yard signs, rigid PVC boards, and metal A-frame stands.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$45.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('rigid-signs')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="bag-signs">
+          <div class="product-image">
+            <img src="/assets/bag-signs.jpg" alt="Custom Plastic Bag Signs">
+          </div>
+          <div class="product-info">
+            <h3>Bag Signs</h3>
+            <p>High-volume promotional plastic bag signs. Fits easily over wire frames for lawn advertising.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$89.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('bag-signs')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="lawn-signs">
+          <div class="product-image">
+            <img src="/assets/lawn-signs.jpg" alt="Coroplast Lawn Signs with H-Stakes">
+          </div>
+          <div class="product-info">
+            <h3>Lawn Signs (Coroplast)</h3>
+            <p>Waterproof yard signs printed double-sided. Includes heavy-duty wire H-Stakes for insertion.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$45.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('lawn-signs')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="foamcore-signs">
+          <div class="product-image">
+            <img src="/assets/foamcore-signs.jpg" alt="Lightweight Foamcore Signs">
+          </div>
+          <div class="product-info">
+            <h3>Foamcore Board Signs</h3>
+            <p>Lightweight rigid display boards. Perfect for indoor presentations, easel displays, and events.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$55.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('foamcore-signs')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="vinyl-lettering">
+          <div class="product-image">
+            <img src="/assets/vinyl-lettering.jpg" alt="Adhesive Cut Vinyl Lettering">
+          </div>
+          <div class="product-info">
+            <h3>Vinyl Lettering</h3>
+            <p>Pre-spaced cut adhesive vinyl letters. Easily apply business hours or logo text to glass surfaces.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$40.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('vinyl-lettering')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="window-vinyl">
+          <div class="product-image">
+            <img src="/assets/window-vinyl.jpg" alt="Storefront Window Vinyl Graphics">
+          </div>
+          <div class="product-info">
+            <h3>Window Vinyl Graphics</h3>
+            <p>Large format printed vinyl stickers for storefront glass displays. Available in solid or micro-perforated options.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$85.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('window-vinyl')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="vehicle-magnets">
+          <div class="product-image">
+            <img src="https://myfridgemagnets.co.uk/wp-content/uploads/2018/02/magnetic-vehicle-sign.jpg" alt="Removable Vehicle Door Magnets">
+          </div>
+          <div class="product-info">
+            <h3>Vehicle Door Magnets</h3>
+            <p>Removable, thick magnetic sheets custom branded for car doors. Easy swap advertising.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$65.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('vehicle-magnets')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="vehicle-graphics">
+          <div class="product-image">
+            <img src="https://i.etsystatic.com/12103127/r/il/998a1c/6987946368/il_fullxfull.6987946368_1jox.jpg" alt="Adhesive Vehicle Decals Wrapping">
+          </div>
+          <div class="product-info">
+            <h3>Vehicle Door Graphics</h3>
+            <p>Contour cut high-grade vinyl decals that stick permanently to steel doors for mobile branding.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$95.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('vehicle-graphics')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="signs" data-product="telescopic-backdrops">
+          <div class="product-image">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.KhNqUm4DN66lQBjMaS-GBQHaHa?r=0&w=720&h=720&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Large Format Telescopic Backdrop Stands">
+          </div>
+          <div class="product-info">
+            <h3>Telescopic Backdrops</h3>
+            <p>Premium trade-show backdrop. Adjustable metal stands holding large fabric banner prints.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$199.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('telescopic-backdrops')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- --- BOOKS & BINDING --- -->
+        <div class="product-card gradient-border-cyan-magenta" data-category="books" data-product="perfect-bound">
+          <div class="product-image">
+            <img src="/assets/perfect-bound.jpg" alt="Perfect Bound Softcover Books">
+          </div>
+          <div class="product-info">
+            <h3>Perfect Bound Books</h3>
+            <p>Professional softcover book binding. High durability glue binding ideal for novels and catalogs.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$120.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('perfect-bound')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="books" data-product="coil-bound">
+          <div class="product-image">
+            <img src="/assets/coil-bound.jpg" alt="Spiral Spiral Bound Booklets">
+          </div>
+          <div class="product-info">
+            <h3>Coil Spiral Bound Books</h3>
+            <p>Vibrant spiral plastic coil binding. Lays flat when opened, perfect for instruction manuals.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$45.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('coil-bound')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="books" data-product="saddle-stitched">
+          <div class="product-image">
+            <img src="/assets/saddle-stitched.jpg" alt="Saddle Stitched Stapled Pamphlets">
+          </div>
+          <div class="product-info">
+            <h3>Saddle Stitched Booklets</h3>
+            <p>Stapled backbone booklets. Cost-effective and clean solution for manuals, flyers, and magazines.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$35.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('saddle-stitched')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="books" data-product="wedding-invitations">
+          <div class="product-image">
+            <span class="product-tag magenta">Wedding Highlight</span>
+            <img src="/assets/wedding-invitations.jpg" alt="Wedding Invitation Cards and Envelopes">
+          </div>
+          <div class="product-info">
+            <h3>Wedding Invitations</h3>
+            <p>Elegant contemporary invitation stationery, minimalist RSVP cards, textured cotton envelopes, and hot foil stamping styles.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$75.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('wedding-invitations')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- --- STICKERS & LABELS --- -->
+        <div class="product-card gradient-border-cyan-magenta" data-category="labels" data-product="die-cut-stickers">
+          <div class="product-image">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.4Xcd2DzCyfH_nFtEl24ANwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Vinyl Die Cut Custom Stickers">
+          </div>
+          <div class="product-info">
+            <h3>Vinyl Die Cut Stickers</h3>
+            <p>Heavy durability custom vinyl stickers precision cut to shape. Waterproof, sunproof decal adhesive.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$49.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('die-cut-stickers')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="labels" data-product="cut-stickers">
+          <div class="product-image">
+            <img src="/assets/cut-stickers.jpg" alt="Product Square/Circle Labels Sheets">
+          </div>
+          <div class="product-info">
+            <h3>Cut Stickers Labels</h3>
+            <p>Standard geometric shape labels (circles, rectangles, squares) printed on easy-peel adhesive sheets.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$39.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('cut-stickers')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card gradient-border-cyan-magenta" data-category="labels" data-product="roll-labels">
+          <div class="product-image">
+            <img src="/assets/roll-labels.jpg" alt="Adhesive Custom Branding Roll Labels">
+          </div>
+          <div class="product-info">
+            <h3>Roll Stickers Labels</h3>
+            <p>High-volume print label rolls. Perfect for mechanical label applicators and corporate product packaging branding.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>Starts from</span><strong>$149.00</strong></div>
+              <button class="btn btn-secondary" onclick="openBookingDrawer('roll-labels')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- How it Works Section --- -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Vibrant <span class="gradient-text-cmyk">Order Flow</span></h2>
+        <p>Requesting print setups, proofs, and picking up in Toronto has never been easier.</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Select Options</h3>
+          <p>Choose page settings, card stock weight, dimensions, and quantity directly in the configurator.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Upload Proof</h3>
+          <p>Provide your digital PDF layout artwork or details via our secure drag-and-drop uploader.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Instantly Notify</h3>
+          <p>Route the detailed invoice specifications immediately to the studio's email or WhatsApp.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3>Local Pickup</h3>
+          <p>Retrieve finished print packages from our Toronto store or configure secure courier delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Testimonials Section --- -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Trusted By <span class="gradient-text-cmyk">Toronto Businesses</span></h2>
+        <p>Read review responses from clients who trust SL Graphics & Printing Inc. for bulk and custom runs.</p>
+      </div>
+      
+      <div class="slider-container">
+        <div class="testimonial-track" id="testimonial-track">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <blockquote>"SL Graphics did an incredible job creating our new marketing and sales brochures. Their prices are very competitive, and the print quality is absolutely world-class. Toronto's finest!"</blockquote>
+            <div class="author-info">
+              <div class="author-avatar">JB</div>
+              <div class="author-name">Jessica Brown</div>
+              <div class="author-role">Marketing Director</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <blockquote>"They have consistently demonstrated the ability to provide high-quality work at a competitive price. We can always rely on their team to have our banner printing completed on time."</blockquote>
+            <div class="author-info">
+              <div class="author-avatar">AD</div>
+              <div class="author-name">Alison Down</div>
+              <div class="author-role">Operations Manager</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <blockquote>"Thank you for the excellent service on our brochure reprints and display posters. I really appreciate your fine quality, speed, and affordable local pricing."</blockquote>
+            <div class="author-info">
+              <div class="author-avatar">MF</div>
+              <div class="author-name">Mark Foster</div>
+              <div class="author-role">Creative Lead</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-slide" aria-label="Previous review">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <button class="slider-btn" id="next-slide" aria-label="Next review">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Accordion FAQ Section --- -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently <span class="gradient-text-cmyk">Asked Questions</span></h2>
+        <p>Everything you need to know about our digital printing options, file mockups, and turnaround speeds.</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What printing services do you offer?</h3>
+            <div class="faq-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>SL Graphics offers standard B&W and color copies, custom business cards, flyers, pamphlets, booklets, coil-bound books, posters, stickers, labels, large format signs, storefront banners, and wedding invitation stationery.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is digital printing, and is it right for me?</h3>
+            <div class="faq-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>Digital printing assembles the images for print from a complex set of numbers and formulas. These images are captured from pixels, and the digitalised image is used to control the deposition of ink to replicate the image you would like to print. It is highly cost-effective for low-to-medium volume jobs and allows instant updates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I get a custom price quote for my print job?</h3>
+            <div class="faq-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we provide instant pricing details in our booking form, but you can also use our custom request forms or call our Toronto store at (416) 531-4377 for a specialized wholesale volume discount.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can you design or help me design my print job?</h3>
+            <div class="faq-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you don't have a finished PDF design layout, our team of graphics designers will create it for you after discussing all the details during the booking verification phase.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can you scan my hardcopy originals into electronic form?</h3>
+            <div class="faq-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we scan hardcopies and save them as high-quality PDFs or image files onto emails, CDs, or USB drives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Contact Section --- -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact <span class="gradient-text-cmyk">Our Toronto Studio</span></h2>
+        <p>Have questions about dimensions, paper weight, or layout? Reach out or visit us in Bloor West. We are ready to help.</p>
+        
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Store Address</h4>
+              <p>1246 Bloor St W, Toronto, ON M6H 1N5, Canada</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Call Store</h4>
+              <p><a href="tel:+14165314377">+1 416-531-4377</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Email Contact</h4>
+              <p>
+                <a href="mailto:info@printmycard.ca">info@printmycard.ca</a><br>
+                <a href="mailto:slgraphicsprinting@gmail.com" style="font-size: 0.9rem;">slgraphicsprinting@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0792556554743!2d-79.4447376!3d43.6600465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34458f3fb409%3A0xe54c25f4ccb4a37b!2s1246+Bloor+St+W%2C+Toronto%2C+ON+M6H+1N5%2C+Canada!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+      <!-- Contact/Quote Form -->
+      <div class="contact-form-card gradient-border-cyan-magenta">
+        <h3>Request a <span class="gradient-text-cmyk">Price Quote</span></h3>
+        <p style="font-size: 0.9rem; margin-bottom: 24px;">Send us details about your custom printing requirements and we'll reply with layout proofs.</p>
+        
+        <form id="general-contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key for direct email submission -->
+          <input type="hidden" name="access_key" value="5c44cf6d-f0b4-42b7-a36c-9407bf8a964a">
+          <input type="hidden" name="subject" value="New Print Quote Inquiry from SL Graphics Website">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" name="name" class="form-control" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" class="form-control" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">Project Description</label>
+            <textarea id="contact-message" name="message" class="form-control" placeholder="Describe what you want printed, size options, paper stock preference, and total quantity." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <img src="https://printmycard.ca/wp-content/uploads/2023/02/SLGraphicsLogo-1.png" alt="SL Graphics & Printing Inc. Logo Footer">
+        </a>
+        <p>SL Graphics & Printing Inc. provides high-precision print layouts, booklets, storefront signage, and custom stationery in Toronto.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-links-title">Services</h4>
+        <div class="footer-links-list">
+          <a href="#products">Business Cards</a>
+          <a href="#products">Color Copies</a>
+          <a href="#products">Large Format Signs</a>
+          <a href="#products">Labels & Stickers</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-links-title">Company</h4>
+        <div class="footer-links-list">
+          <a href="#hero">SL Graphics</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact Store</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-links-title">Find Us Online</h4>
+        <div class="social-links" style="margin-bottom: 20px;">
+          <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          
+        </div>
+        <p style="font-size: 0.8rem; line-height: 1.8;">
+          Mon - Fri: 10AM - 6PM<br>
+          Sat: 10AM - 3PM<br>
+          Sun: Closed
+        </p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SL Graphics & Printing Inc. All Rights Reserved.</p>
+      <p>1246 Bloor St W, Toronto, ON M6H 1N5</p>
+    </div>
+  </footer>
+
+  <!-- --- BOOKING MODAL DRAWER --- -->
+  <div id="booking-overlay" class="booking-overlay"></div>
+  <div id="booking-drawer" class="booking-drawer">
+    <div class="drawer-header">
+      <h2>Configure <span class="gradient-text-cmyk">Your Print</span></h2>
+      <button class="close-drawer-btn" onclick="closeBookingDrawer()" aria-label="Close booking builder">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+    </div>
+    
+    <div class="drawer-content">
+      <form id="booking-flow-form" onsubmit="event.preventDefault();">
+        
+        <!-- Section 1: Select Configuration -->
+        <div class="booking-form-section">
+          <h3 style="font-size: 1.15rem; margin-bottom: 12px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 6px; color: var(--cmyk-c);">1. Choose Specifications</h3>
+          
+          <div class="form-group">
+            <label for="booking-product-select">Select Product Category</label>
+            <select id="booking-product-select" class="form-control" onchange="handleProductChange()">
+              <!-- Business Cards -->
+              <optgroup label="Business Cards">
+                <option value="business-cards">Premium Business Cards</option>
+                <option value="standard-cards">Standard Business Cards</option>
+                <option value="digital-cards">Same-Day Digital Cards</option>
+                <option value="silk-cards">Premium Silk Cards</option>
+                <option value="suede-cards">Suede Matte Cards</option>
+                <option value="raised-cards">Raised Spot UV Cards</option>
+                <option value="gold-foil-cards">Gold Foil Cards</option>
+                <option value="edge-cards">Edge Painted Cards</option>
+              </optgroup>
+              <!-- Copies & Documents -->
+              <optgroup label="Copies & Documents">
+                <option value="color-copies">High-Def Color Copies</option>
+                <option value="bw-copies">Black & White Copies</option>
+                <option value="email-printing">Email Printing Service</option>
+                <option value="fax">In-Store Fax Service</option>
+                <option value="scanning-service">Document Scanning</option>
+                <option value="wide-format">Wide Format Prints</option>
+                <option value="document-services">Document Finishing Services</option>
+              </optgroup>
+              <!-- Signs & Banners -->
+              <optgroup label="Signs & Banners">
+                <option value="banner-stands">Retractable Banner Stands</option>
+                <option value="seating-charts">Event Seating Charts</option>
+                <option value="canvas-prints">Canvas Gallery Wraps</option>
+                <option value="standup-cutouts">Life-Size Standup Cutouts</option>
+                <option value="photobooth">Photobooth Backdrops</option>
+                <option value="rigid-signs">Rigid Signs & A-Frames</option>
+                <option value="bag-signs">Bag Signs</option>
+                <option value="lawn-signs">Lawn Signs (Coroplast)</option>
+                <option value="foamcore-signs">Foamcore Board Signs</option>
+                <option value="vinyl-lettering">Vinyl Lettering</option>
+                <option value="window-vinyl">Window Vinyl Graphics</option>
+                <option value="vehicle-magnets">Vehicle Door Magnets</option>
+                <option value="vehicle-graphics">Vehicle Door Graphics</option>
+                <option value="telescopic-backdrops">Telescopic Backdrops</option>
+              </optgroup>
+              <!-- Books & Binding -->
+              <optgroup label="Books & Binding">
+                <option value="perfect-bound">Perfect Bound Books</option>
+                <option value="coil-bound">Coil Spiral Bound Books</option>
+                <option value="saddle-stitched">Saddle Stitched Booklets</option>
+                <option value="wedding-invitations">Wedding Invitations</option>
+              </optgroup>
+              <!-- Stickers & Labels -->
+              <optgroup label="Stickers & Labels">
+                <option value="die-cut-stickers">Vinyl Die Cut Stickers</option>
+                <option value="cut-stickers">Cut Stickers Labels</option>
+                <option value="roll-labels">Roll Stickers Labels</option>
+              </optgroup>
+            </select>
+          </div>
+          
+          <!-- Dynamic product details loaded via JS -->
+          <div id="dynamic-product-options"></div>
+          
+          <!-- Pricing summary -->
+          <div class="booking-summary-box" style="margin-top: 16px;">
+            <h4>Order Summary</h4>
+            <p id="summary-product-name" style="font-weight: 600; color: var(--color-heading); margin-bottom: 4px;"></p>
+            <p id="summary-options" style="font-size: 0.85rem; margin-bottom: 12px;"></p>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 12px;">
+              <span>Estimated Cost:</span>
+              <strong id="summary-price" style="font-size: 1.4rem; color: var(--color-heading);">$0.00</strong>
+            </div>
+          </div>
+          
+          <!-- Suggested Products -->
+          <div id="suggested-products-container" class="suggested-products-box" style="margin-top: 16px;"></div>
+        </div>
+        
+        <!-- Section 2: Drag & Drop Files -->
+        <div class="booking-form-section" style="margin-top: 24px;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 12px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 6px; color: var(--cmyk-m);">2. Upload Artwork Layout</h3>
+          <p style="font-size: 0.85rem; margin-bottom: 16px; opacity: 0.7;">Upload artwork (PDF, JPG, PNG, AI, ZIP). Max 50MB. If you don't have artwork, upload details for a layout mockup.</p>
+          
+          <div class="file-drop-zone" id="file-drop-zone">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
+            <p style="font-weight: 500; margin-bottom: 4px;">Drag and drop file here</p>
+            <p style="font-size: 0.8rem; opacity: 0.6;">or click to browse from device</p>
+            <input type="file" id="print-file-input" name="file" accept=".pdf,.jpg,.jpeg,.png,.ai,.psd,.zip">
+          </div>
+          
+          <div id="uploaded-file-list" class="file-list" style="margin-bottom: 16px;"></div>
+          
+          <div class="form-group">
+            <label for="booking-notes">Special Instructions / Printing Notes</label>
+            <textarea id="booking-notes" class="form-control" placeholder="E.g., Matte laminate binding, specific Pantone matching details, quick rush requests..."></textarea>
+          </div>
+        </div>
+        
+        <!-- Section 3: Client Details -->
+        <div class="booking-form-section" style="margin-top: 24px; margin-bottom: 16px;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 12px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 6px; color: var(--cmyk-y);">3. Contact & Delivery</h3>
+          
+          <div class="form-group">
+            <label for="client-name">Full Name</label>
+            <input type="text" id="client-name" class="form-control" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="client-email">Email Address</label>
+            <input type="email" id="client-email" class="form-control" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="client-phone">Phone Number</label>
+            <input type="tel" id="client-phone" class="form-control" placeholder="(416) 555-0199" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="delivery-option">Delivery Option</label>
+            <select id="delivery-option" class="form-control">
+              <option value="pickup">In-Store Pickup (1246 Bloor St W)</option>
+              <option value="delivery">Toronto Courier Delivery (Charges Apply)</option>
+            </select>
+          </div>
+          
+          <div class="form-group" id="delivery-address-group" style="display: none;">
+            <label for="delivery-address">Delivery / Pickup Address</label>
+            <input type="text" id="delivery-address" class="form-control" placeholder="Enter full delivery or pickup address">
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    
+    <!-- Drawer Action Buttons -->
+    <div class="drawer-footer" style="display: flex; gap: 12px;">
+      <button id="submit-email-btn" class="btn btn-primary" onclick="submitBooking('email')" style="flex: 1; justify-content: center;">Book via Email</button>
+      <button id="submit-whatsapp-btn" class="btn btn-whatsapp" onclick="submitBooking('whatsapp')" style="flex: 1; justify-content: center; display: inline-flex; align-items: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.733-1.46L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.59 2.016 14.1 1.002 11.99 1.002c-5.442 0-9.87 4.372-9.874 9.802-.001 1.73.469 3.414 1.36 4.916l-.973 3.55 3.644-.956zm12.35-6.177c-.302-.151-1.787-.88-2.063-.98-.277-.1-.478-.151-.68.151-.202.3-.779.98-.956 1.18-.178.2-.353.226-.655.076-.301-.15-1.274-.47-2.426-1.5-.897-.8-1.502-1.79-1.678-2.091-.177-.3-.019-.462.13-.612.135-.135.302-.35.453-.526.151-.176.202-.3.302-.5.101-.2.05-.376-.025-.526-.075-.15-.68-1.639-.933-2.249-.246-.593-.497-.513-.68-.522-.177-.008-.38-.01-.582-.01-.202 0-.531.075-.809.376-.278.3-1.062 1.03-1.062 2.512 0 1.482 1.087 2.915 1.238 3.116.151.2 2.14 3.268 5.18 4.582.723.313 1.288.5 1.728.64.727.23 1.388.19 1.91.11.583-.087 1.787-.73 2.039-1.43.252-.7.252-1.3.177-1.43-.075-.13-.277-.202-.579-.352z"/></svg>
+        WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Success Toast Notification -->
+  <div id="success-toast" class="success-toast">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+    <span id="success-message">Booking submitted successfully!</span>
+  </div>
+
+  <!-- Load main script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
